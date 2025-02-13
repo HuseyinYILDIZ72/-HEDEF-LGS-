@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Paneli</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+        </nav>
+    </header>
+    <main>
+        <section id="admin-actions">
+            <h2>Ders Notu Ekle</h2>
+            <form id="note-form">
+                <label for="subject">Ders:</label>
+                <select id="subject" required>
+                    <option value="Türkçe">Türkçe</option>
+                    <option value="Matematik">Matematik</option>
+                    <option value="Fen Bilimleri">Fen Bilimleri</option>
+                    <option value="T.C. İnkılap Tarihi ve Atatürkçülük">T.C. İnkılap Tarihi ve Atatürkçülük</option>
+                    <option value="Yabancı Dil">Yabancı Dil</option>
+                    <option value="Din Kültürü ve Ahlâk Bilgisi">Din Kültürü ve Ahlâk Bilgisi</option>
+                </select>
+                <label for="note-title">Başlık:</label>
+                <input type="text" id="note-title" required>
+                <label for="note-file">Dosya:</label>
+                <input type="file" id="note-file" required>
+                <button type="submit">Ekle</button>
+            </form>
+        </section>
+        <section id="admin-notes">
+            <h2>Mevcut Ders Notları</h2>
+            <div id="note-list"></div>
+        </section>
+        <section id="admin-users">
+            <h2>Kullanıcılar</h2>
+            <div id="user-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Bu site Hüseyin YILDIZ tarafından yapılmıştır.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
